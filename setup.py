@@ -13,7 +13,7 @@ test_requires = requires + [
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-with open(os.path.join(here, 'README.md')) as f:
+with open(os.path.join(here, 'README.rst')) as f:
     README = f.read()
 
 setup(name='esculator',
@@ -32,7 +32,6 @@ setup(name='esculator',
       url='https://github.com/openprocurement/esculator',
       license='Apache License 2.0',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['esculator'],
       include_package_data=True,
       zip_safe=False,
       install_requires=requires,
